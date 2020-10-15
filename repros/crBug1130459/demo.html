@@ -5,13 +5,13 @@
     document.querySelector("#log").append(li);
   }
 
-  let w;
+  let newWindow;
   function run() {
-    w = window.open('window.html', '_blank', 'menubar=no, toolbar=no');
+    newWindow = window.open('window.html', '_blank', 'menubar=no, toolbar=no');
   }
 
   function windowLoaded() {
-    let windowDoc = w.document;
+    let windowDoc = newWindow.document;
     document.domain = document.domain;
     try {
         log(w.document);
