@@ -1,0 +1,29 @@
+<script>
+  function log(text) {
+    const li = document.createElement("li");
+    li.innerText = text;
+    document.querySelector("#log").append(li);
+  }
+
+  let w;
+  function run() {
+    w = window.open('window.html', '_blank', 'menubar=no, toolbar=no');
+  }
+
+  function windowLoaded() {
+    let windowDoc = w.document;
+    document.domain = document.domain;
+    try {
+        log(w.document);
+    } catch(e) {
+        log(e);
+    }
+    log(windowDoc.body.firstElementChild.options[1])
+  }
+</script>
+<body>
+  <a href="https://crbug.com/1130459">Issue 1130459: Chrome_Mac: Crash Report - blink::V8DOMWrapper::CreateWrapper</a>
+  <br/><br/>
+  <input type="button" value="Crash the browser" onclick="run()"/>
+  <ol id="log"></ol>
+</body>
