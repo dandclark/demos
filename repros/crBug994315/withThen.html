@@ -1,0 +1,31 @@
+<script>
+    function log(text) {
+      const li = document.createElement("li");
+      li.innerText = text;
+      document.querySelector("#log").append(li);
+    }
+  
+    window.addEventListener("error", (e) => {
+      log(`e.filename: ${e.filename}`);
+      log(`e.error: ${e.error}`);
+      log(`e.error instanceof SyntaxError: ${e.error instanceof SyntaxError}`);
+    });
+  </script>
+  <body>
+    <a href="https://crbug.com/994315">Issue 994315: JSON Modules Reports Parse Errors Incorrectly</a>
+    <br><br/>
+    <a href="https://github.com/dandclark/demos/tree/master/repros/crBug994315">Link to demo source</a>
+    <h3>With then()</h3>
+    <script type="module">
+      fetch("./parse-error.json").then(response => {
+        return response.json();
+      }).then(json => {
+
+      }).catch(e => {
+        log(`e: ${e}`);
+      });
+    </script>
+    <br/><br/>
+    <ol id="log"></ol>
+  </body>
+  
