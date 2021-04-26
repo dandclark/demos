@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Repro for crbug.com/1182010:</title>
+    </head>
+    <body>
+        <h2>Repro for <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1182010">crbug.com/1182010</a>: ExecuteScript intermittently Fails to Inject JavaScript for Xml-Based Documents</h2>
+        <h3>Repro steps:</h3>
+        <ol>
+            <li>Install the extension indicated in the <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1182010">bug</a></li>
+            <li>Refresh this page</li>
+            <li>
+                Open DevTools and note per the log statements that the extension content script was injected &lt; 4 times,
+                but it should have been injected into all 3 iframes on the page (plus the top-level page).
+                Note: occasionally it won't repro. In this case, refresh the page a few times; eventually you should observe the bug.
+            </li>
+        </ol>
+        <iframe src="data.xml"></iframe>
+        <iframe src="data.xml"></iframe>
+        <iframe src="data.xml"></iframe>
+    </body>
+</html>
