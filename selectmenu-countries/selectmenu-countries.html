@@ -1,0 +1,278 @@
+<title>&lt;selectmenu&gt; demo</title>
+<style>
+  .select-country {
+    position: relative;
+    top: 50px;
+  }
+
+  .select-country popup {
+    height: 404px;
+    width: 200px;
+    padding: 0;
+    margin-top: 4px;
+    overflow: auto;
+    box-shadow: 0px 12.8px 28.8px rgba(0, 0, 0, 0.13), 0px 0px 9.2px rgba(0, 0, 0, 0.11);
+  }
+
+  .select-country img {
+    width: 17px;
+    height: 10px;
+  }
+
+  .select-country #my-input {
+    width: 180px;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid black;
+    margin-left: 1px;
+  }
+
+  .select-country .clear {
+    background: -webkit-image-set(url(flags/clear_icon.svg) 1x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    height: 10px;
+    width: 8px;
+    border: 0;
+    padding: 4px;
+    padding-bottom: 0px;
+    margin-left: 4px;
+  }
+
+  .select-country .clear {
+    visibility: hidden;
+  }
+
+  .select-country .clear:hover {
+    background-color: gray;
+  }
+
+  .select-country option:hover {
+    background-color: white;
+  }
+
+  .select-country option {
+    margin: 4px;
+  }
+
+  .select-country option:hover .clear {
+    visibility: visible;
+  }
+
+  .select-country .country:hover {
+    background-color: gray;
+  }
+
+</style>
+
+<h2>&lt;selectmenu&gt; demo</h2>
+<h4>To try out &lt;selectmenu&gt;, launch this page in Chromium (Edge/Chrome Canary) with the
+  command-line flag: <pre>--enable-blink-features=HTMLSelectMenuElement</pre>
+</h4>
+<h4>Countries can be added to the menu by typing them into the text box and hitting 'Enter'.
+  Countries can be removed from the list by clicking the 'x'.  
+</h4>
+<h4>
+  Arbitrary styles can be applied to the &lt;selectmenu&gt;; note the use of images and try
+  applying some styles using the buttons.
+</h4>
+<h4>
+  In the source for this page, note that the page didn't need to include JavaScript to
+  open/close the select or to display the value in the button when an option is clicked, etc.
+</h4>
+<br>
+<button id="boxShadow1">Box shadow style 1</button>
+<button id="boxShadow2">Box shadow style 2</button>
+<button id="boxShadow3">Box shadow initial style</button>
+<br>
+<selectmenu class="select-country">
+  <popup slot="listbox" part="listbox" id="my-popup">
+    <option value="" disabled selected hidden>Select a country</option>
+    <input id="my-input" placeholder="Enter country">
+    <option value="AR">
+      <img src="flags/flag-of-Argentina.png">
+      <span class="country">
+        Argentina
+      </span>
+      <button class="clear"></button>
+    </option>
+    <option value="AU">
+      <img src="flags/flag-of-Australia.png">
+      <span class="country">
+      Australia
+      </span>
+      <button class="clear"></button>
+    </option>
+    <option value="BS">
+      <img src="flags/flag-of-Bahamas.png">
+      <span class="country">Bahamas</span>
+      <button class="clear"></button>
+    </option>
+    <option value="BE">
+      <img src="flags/flag-of-Belgium.png">
+      <span class="country">Belgium</span>
+      <button class="clear"></button>
+    </option>
+    <option value="BO">
+      <img src="flags/flag-of-Bolivia.png">
+      <span class="country">Bolivia</span>
+      <button class="clear"></button>
+    </option>
+    <option value="BR">
+      <img src="flags/flag-of-Brazil.png">
+      <span class="country">Brazil</span>
+      <button class="clear"></button>
+    </option>
+    <option value="CA">
+      <img src="flags/flag-of-Canada.png">
+      <span class="country">Canada</span>
+      <button class="clear"></button>
+    </option>
+    <option value="CN">
+      <img src="flags/flag-of-China.png">
+      <span class="country">China</span>
+      <button class="clear"></button>
+    </option>
+    <option value="HR">
+      <img src="flags/flag-of-Croatia.png">
+      <span class="country">Croatia</span>
+      <button class="clear"></button>
+    </option>
+    <option value="DK">
+      <img src="flags/flag-of-Denmark.png">
+      <span class="country">Denmark</span>
+      <button class="clear"></button>
+    </option>
+    <option value="FI">
+      <img src="flags/flag-of-Finland.png">
+      <span class="country">Finland</span>
+      <button class="clear"></button>
+    </option>
+    <option value="FR">
+      <img src="flags/flag-of-France.png">
+      <span class="country">France</span>
+      <button class="clear"></button>
+    </option>
+    <option value="DE">
+      <img src="flags/flag-of-Germany.png">
+      <span class="country">Germany</span>
+      <button class="clear"></button>
+      </option>
+    <option value="GR">
+      <img src="flags/flag-of-Greece.png">
+      <span class="country">Greece</span>
+      <button class="clear"></button>
+    </option>
+    <option value="IN">
+      <img src="flags/flag-of-India.png">
+      <span class="country">India</span>
+      <button class="clear"></button>
+    </option>
+    <option value="IE">
+      <img src="flags/flag-of-Ireland.png">
+      <span class="country">Ireland</span>
+      <button class="clear"></button>
+    </option>
+    <option value="IL">
+      <img src="flags/flag-of-Israel.png">
+      <span class="country">Israel</span>
+      <button class="clear"></button>
+    </option>
+    <option value="JP">
+      <img src="flags/flag-of-Japan.png">
+      <span class="country">Japan</span>
+      <button class="clear"></button>
+    </option>
+    <option value="KE">
+      <img src="flags/flag-of-Kenya.png">
+      <span class="country">Kenya</span>
+      <button class="clear"></button>
+    </option>
+    <option value="MX">
+      <img src="flags/flag-of-Mexico.png">
+      <span class="country">Mexico</span>
+      <button class="clear"></button>
+    </option>
+    <option value="NL">
+      <img src="flags/flag-of-Netherlands.png">
+      <span class="country">Netherlands</span>
+      <button class="clear"></button>
+    </option>
+    <option value="NO">
+      <img src="flags/flag-of-Norway.png">
+      <span class="country">Norway</span>
+      <button class="clear"></button>
+    </option>
+    <option value="RU">
+      <img src="flags/flag-of-Russia.png">
+      <span class="country">Russia</span>
+      <button class="clear"></button>
+    </option>
+    <option value="GB">
+      <img src="flags/flag-of-United-Kingdom.png">
+      <span class="country">United Kingdom</span>
+      <button class="clear"></button>
+    </option>
+    <option value="US">
+      <img src="flags/flag-of-United-States-of-America.png">
+      <span class="country">United States</span>
+      <button class="clear"></button>
+    </option>
+  </popup>
+</selectmenu>
+
+<script>
+
+  boxShadow1.addEventListener("click", function(event) {
+    document.getElementById("my-popup").style.boxShadow = "blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px";
+  });
+
+  boxShadow2.addEventListener("click", function(event) {
+    document.getElementById("my-popup").style.boxShadow = "rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px";
+  });
+
+  boxShadow3.addEventListener("click", function(event) {
+    document.getElementById("my-popup").style.boxShadow = "0px 12.8px 28.8px rgba(0, 0, 0, 0.13), 0px 0px 9.2px rgba(0, 0, 0, 0.11)";
+  });
+
+
+  // Remove a country when its 'x' button is clicked.
+  let clearButtons = document.querySelectorAll('.clear');
+  clearButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+      event.target.parentNode.remove();
+    });
+  });
+
+
+  // Add a new country with the name entered in the text box.
+  document.getElementById("my-input").addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      let option = document.createElement("option");
+      let img = document.createElement("img");
+      img.src = "flags/flag-of-" + event.target.value + ".png";
+      let span = document.createElement("span");
+      span.innerHTML = event.target.value;
+      span.classList.add("country");
+      let button = document.createElement("button");
+      button.classList.add("clear");
+      button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        event.preventDefault();
+        event.target.parentNode.remove();
+      });
+      option.appendChild(img);
+      option.appendChild(span);
+      option.appendChild(button);
+      document.getElementById("my-popup").insertBefore(option, event.target.nextSibling);
+      event.target.value = "";
+    }
+  });
+</script>
+
+
