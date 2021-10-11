@@ -1,0 +1,204 @@
+<style>
+    .select-country {
+      position: relative;
+      top: 1000px;
+      left: 100px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .select-country div[part=button] {
+      background-color: lightgray;
+      color: black;
+      font-size: larger;
+      padding: 8px;
+      margin: 2px;
+      border-radius: 8px;
+      cursor: default;
+    }
+  
+    .select-country div[part=button]:hover, .select-country div[part=button]:focus {
+      background-color: gray;
+      color: rgba(220, 200, 220, 1.0);
+    }
+  
+    .select-country popup {
+      height: 404px;
+      width: 160px;
+      margin-top: 0px;
+      padding-left: 1px;
+      padding-top: 0px;
+      overflow-x: clip;
+      overflow-y: scroll;
+      box-shadow: 0px 12.8px 28.8px rgba(0, 0, 0, 0.13), 0px 0px 9.2px rgba(0, 0, 0, 0.11);
+    }
+  
+    .select-country popup::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    .select-country popup::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+    }
+    .select-country popup::-webkit-scrollbar-thumb {
+      background-color: rgba(220, 200, 220, 1.0);
+      border-radius: 12px;
+    }
+  
+    .select-country img {
+      width: 17px;
+      height: 10px;
+    }
+  
+    .select-country #my-input {
+      width: 180px;
+      border-radius: 0px;
+      border: 0px;
+      border-bottom: 1px solid black;
+      margin-left: 1px;
+    }
+  
+    .select-country option {
+      margin: 4px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  
+    .select-country option:hover {
+      background-color: gray;
+      color: white;
+    }
+  
+    .select-country option:focus {
+      outline: none;
+      background-color: gray;
+      color: white;
+    }
+  </style>
+  <body onload="setup()">
+    <selectmenu class="select-country">
+      <div slot="button" part="button" tabindex="0"><div part="selected-value">Select a country</div></div>
+      <popup slot="listbox" part="listbox" id="my-popup">
+        <option value="" disabled selected hidden>Select a country</option>
+        <option value="AR">
+          <img src="flags/flag-of-Argentina.png">
+          <span class="country">
+            Argentina
+          </span>
+        </option>
+        <option value="AU">
+          <img src="flags/flag-of-Australia.png">
+          <span class="country">
+          Australia
+          </span>
+        </option>
+        <option value="BS">
+          <img src="flags/flag-of-Bahamas.png">
+          <span class="country">Bahamas</span>
+        </option>
+        <option value="BE">
+          <img src="flags/flag-of-Belgium.png">
+          <span class="country">Belgium</span>
+        </option>
+        <option value="BO">
+          <img src="flags/flag-of-Bolivia.png">
+          <span class="country">Bolivia</span>
+        </option>
+        <option value="BR">
+          <img src="flags/flag-of-Brazil.png">
+          <span class="country">Brazil</span>
+        </option>
+        <option value="CA">
+          <img src="flags/flag-of-Canada.png">
+          <span class="country">Canada</span>
+        </option>
+        <option value="CN">
+          <img src="flags/flag-of-China.png">
+          <span class="country">China</span>
+        </option>
+        <option value="HR">
+          <img src="flags/flag-of-Croatia.png">
+          <span class="country">Croatia</span>
+        </option>
+        <option value="DK">
+          <img src="flags/flag-of-Denmark.png">
+          <span class="country">Denmark</span>
+        </option>
+        <option value="FI">
+          <img src="flags/flag-of-Finland.png">
+          <span class="country">Finland</span>
+        </option>
+        <option value="FR">
+          <img src="flags/flag-of-France.png">
+          <span class="country">France</span>
+        </option>
+        <option value="DE">
+          <img src="flags/flag-of-Germany.png">
+          <span class="country">Germany</span>
+          </option>
+        <option value="GR">
+          <img src="flags/flag-of-Greece.png">
+          <span class="country">Greece</span>
+        </option>
+        <option value="IN">
+          <img src="flags/flag-of-India.png">
+          <span class="country">India</span>
+        </option>
+        <option value="IE">
+          <img src="flags/flag-of-Ireland.png">
+          <span class="country">Ireland</span>
+        </option>
+        <option value="IL">
+          <img src="flags/flag-of-Israel.png">
+          <span class="country">Israel</span>
+        </option>
+        <option value="JP">
+          <img src="flags/flag-of-Japan.png">
+          <span class="country">Japan</span>
+        </option>
+        <option value="KE">
+          <img src="flags/flag-of-Kenya.png">
+          <span class="country">Kenya</span>
+        </option>
+        <option value="MX">
+          <img src="flags/flag-of-Mexico.png">
+          <span class="country">Mexico</span>
+        </option>
+        <option value="NL">
+          <img src="flags/flag-of-Netherlands.png">
+          <span class="country">Netherlands</span>
+        </option>
+        <option value="NO">
+          <img src="flags/flag-of-Norway.png">
+          <span class="country">Norway</span>
+        </option>
+        <option value="RU">
+          <img src="flags/flag-of-Russia.png">
+          <span class="country">Russia</span>
+        </option>
+        <option value="GB">
+          <img src="flags/flag-of-United-Kingdom.png">
+          <span class="country">United Kingdom</span>
+        </option>
+        <option value="US">
+          <img src="flags/flag-of-United-States-of-America.png">
+          <span class="country">United States</span>
+        </option>
+      </popup>
+    </selectmenu>
+  
+    <div class="spacer" style="position: relative; top: 2000px">&nbsp;</div>
+  
+    <script>
+      function setup() {
+        setTimeout(() => {
+          console.log("scroll");
+          //document.querySelector("selectmenu div[part=button]").scrollIntoView();
+          window.scroll({top: 600});
+        }, 0);
+      }
+    </script>
+  </body>
+  
+  
+  
