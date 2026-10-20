@@ -1,0 +1,383 @@
+{
+  "repository": "w3ctag/design-reviews",
+  "as_of": "2026-10-19T22:13:04Z",
+  "bot_commit": "003aff0719a7e383f0425f9baac1f56770768059",
+  "issues_n": 1197,
+  "pull_requests_excluded_n": 43,
+  "closed": {
+    "n": 1149,
+    "mean_days": 210.7779765013055,
+    "median_days": 117.41630787037037,
+    "p90_days": 511.1881875
+  },
+  "excluding_charters_and_questions": {
+    "n": 1104,
+    "mean_days": 217.7034688254831,
+    "median_days": 126.77557291666668,
+    "p90_days": 514.7457743055558
+  },
+  "open_age": {
+    "n": 48,
+    "mean_days": 162.99345944251544,
+    "median_days": 133.49009837962961,
+    "p90_days": 318.7158229166668
+  },
+  "closed_within_days_pct": {
+    "30": 17.232375979112273,
+    "90": 41.34029590948651,
+    "180": 61.70583115752829,
+    "365": 82.33246301131419,
+    "730": 96.17058311575283
+  },
+  "open_over_180_days_n": 19,
+  "open_over_365_days_n": 3,
+  "longest_closed": [
+    {
+      "number": 76,
+      "title": "\"With Credentials\" flag possibly inconsistent with web architecture",
+      "created_at": "2015-09-15T15:14:25Z",
+      "closed_at": "2024-10-30T22:28:41Z",
+      "observed_days": 3333.301574074074,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/76"
+    },
+    {
+      "number": 334,
+      "title": "HTML Modules",
+      "created_at": "2019-01-16T23:15:03Z",
+      "closed_at": "2025-02-25T23:32:18Z",
+      "observed_days": 2232.0119791666666,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/334"
+    },
+    {
+      "number": 523,
+      "title": "MiniApp Lifecycle",
+      "created_at": "2020-06-10T06:29:03Z",
+      "closed_at": "2026-02-12T03:44:10Z",
+      "observed_days": 2072.8854976851853,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/523"
+    },
+    {
+      "number": 468,
+      "title": "Review the HTML spec's treatment of focus",
+      "created_at": "2020-01-27T23:49:30Z",
+      "closed_at": "2025-06-04T18:01:25Z",
+      "observed_days": 1954.758275462963,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/468"
+    },
+    {
+      "number": 342,
+      "title": "Related Website Sets (formerly First-Party Sets)",
+      "created_at": "2019-02-08T12:20:34Z",
+      "closed_at": "2024-02-27T20:59:50Z",
+      "observed_days": 1845.360601851852,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/342"
+    },
+    {
+      "number": 240,
+      "title": "The web platform needs a service discovery mechanism",
+      "created_at": "2018-04-07T04:09:27Z",
+      "closed_at": "2023-04-18T08:09:38Z",
+      "observed_days": 1837.1667939814815,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/240"
+    },
+    {
+      "number": 72,
+      "title": "Task Scheduling",
+      "created_at": "2015-09-14T16:11:01Z",
+      "closed_at": "2020-09-22T23:16:06Z",
+      "observed_days": 1835.2951967592592,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/72"
+    },
+    {
+      "number": 513,
+      "title": "CSS advanced attr() function",
+      "created_at": "2020-05-13T23:40:59Z",
+      "closed_at": "2025-01-07T23:56:23Z",
+      "observed_days": 1700.0106944444444,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/513"
+    },
+    {
+      "number": 416,
+      "title": "EditContext API",
+      "created_at": "2019-09-04T00:15:21Z",
+      "closed_at": "2023-10-19T07:06:17Z",
+      "observed_days": 1506.2853703703704,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/416"
+    },
+    {
+      "number": 62,
+      "title": "Clear Site Data",
+      "created_at": "2015-07-17T13:22:16Z",
+      "closed_at": "2019-05-22T13:01:41Z",
+      "observed_days": 1404.9857060185186,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/62"
+    }
+  ]
+}
+
+FILING COHORTS
+[
+  {
+    "period": "2018",
+    "plot_year": 2018,
+    "filed_n": 110,
+    "still_open_n": 0,
+    "n": 110,
+    "mean_days": 326.0251571969697,
+    "median_days": 247.0175810185185,
+    "p90_days": 610.192400462963,
+    "km_median_days": 245.55886574074074,
+    "closed_within_90_pct": 14.545454545454545,
+    "closed_within_180_pct": 36.36363636363637,
+    "closed_within_365_pct": 64.54545454545455
+  },
+  {
+    "period": "2019",
+    "plot_year": 2019,
+    "filed_n": 120,
+    "still_open_n": 0,
+    "n": 120,
+    "mean_days": 281.6114882330247,
+    "median_days": 190.1472048611111,
+    "p90_days": 653.8565266203706,
+    "km_median_days": 186.65372685185184,
+    "closed_within_90_pct": 30.0,
+    "closed_within_180_pct": 48.333333333333336,
+    "closed_within_365_pct": 79.16666666666667
+  },
+  {
+    "period": "2020",
+    "plot_year": 2020,
+    "filed_n": 127,
+    "still_open_n": 0,
+    "n": 127,
+    "mean_days": 233.40659649314668,
+    "median_days": 132.95288194444444,
+    "p90_days": 484.00504861111114,
+    "km_median_days": 132.95288194444444,
+    "closed_within_90_pct": 36.22047244094488,
+    "closed_within_180_pct": 59.05511811023622,
+    "closed_within_365_pct": 80.31496062992126
+  },
+  {
+    "period": "2021",
+    "plot_year": 2021,
+    "filed_n": 105,
+    "still_open_n": 0,
+    "n": 105,
+    "mean_days": 156.78119532627866,
+    "median_days": 107.69002314814814,
+    "p90_days": 350.435414351852,
+    "km_median_days": 107.69002314814814,
+    "closed_within_90_pct": 42.857142857142854,
+    "closed_within_180_pct": 66.66666666666667,
+    "closed_within_365_pct": 90.47619047619048
+  },
+  {
+    "period": "2022",
+    "plot_year": 2022,
+    "filed_n": 88,
+    "still_open_n": 0,
+    "n": 88,
+    "mean_days": 193.07605350378788,
+    "median_days": 118.2263599537037,
+    "p90_days": 488.0812291666666,
+    "km_median_days": 117.41630787037037,
+    "closed_within_90_pct": 44.31818181818182,
+    "closed_within_180_pct": 69.31818181818181,
+    "closed_within_365_pct": 82.95454545454545
+  },
+  {
+    "period": "2023",
+    "plot_year": 2023,
+    "filed_n": 117,
+    "still_open_n": 0,
+    "n": 117,
+    "mean_days": 206.16341820987654,
+    "median_days": 132.04858796296296,
+    "p90_days": 554.6864120370371,
+    "km_median_days": 132.04858796296296,
+    "closed_within_90_pct": 41.88034188034188,
+    "closed_within_180_pct": 63.24786324786325,
+    "closed_within_365_pct": 78.63247863247864
+  },
+  {
+    "period": "2024",
+    "plot_year": 2024,
+    "filed_n": 94,
+    "still_open_n": 0,
+    "n": 94,
+    "mean_days": 136.36233870173365,
+    "median_days": 91.33913773148149,
+    "p90_days": 345.9745995370371,
+    "km_median_days": 90.07951388888888,
+    "closed_within_90_pct": 48.93617021276596,
+    "closed_within_180_pct": 72.34042553191489,
+    "closed_within_365_pct": 92.55319148936171
+  },
+  {
+    "period": "2025",
+    "plot_year": 2025,
+    "filed_n": 136,
+    "still_open_n": 7,
+    "n": 129,
+    "mean_days": 95.19622559575079,
+    "median_days": 55.60584490740741,
+    "p90_days": 230.95952314814818,
+    "km_median_days": 62.1203125,
+    "closed_within_90_pct": 61.76470588235294,
+    "closed_within_180_pct": 77.20588235294117,
+    "closed_within_365_pct": null
+  },
+  {
+    "period": "2026 YTD",
+    "plot_year": 2026,
+    "filed_n": 98,
+    "still_open_n": 41,
+    "n": 57,
+    "mean_days": 49.70903285412606,
+    "median_days": 39.60880787037037,
+    "p90_days": 108.72723379629629,
+    "km_median_days": 75.8041550925926,
+    "closed_within_90_pct": null,
+    "closed_within_180_pct": null,
+    "closed_within_365_pct": null
+  }
+]
+
+RECENT SENSITIVITY
+[
+  {
+    "period": "2023",
+    "subset": "all_issues",
+    "n": 93,
+    "mean_days": 164.7639896953405,
+    "median_days": 83.13967592592593,
+    "p90_days": 320.7842939814815
+  },
+  {
+    "period": "2023",
+    "subset": "exclude_charters_and_questions",
+    "n": 93,
+    "mean_days": 164.7639896953405,
+    "median_days": 83.13967592592593,
+    "p90_days": 320.7842939814815
+  },
+  {
+    "period": "2023",
+    "subset": "substantive_resolution_labels_only",
+    "n": 69,
+    "mean_days": 140.81681377482556,
+    "median_days": 72.74627314814815,
+    "p90_days": 269.6102106481483
+  },
+  {
+    "period": "2024",
+    "subset": "all_issues",
+    "n": 111,
+    "mean_days": 227.97045097180515,
+    "median_days": 125.89791666666666,
+    "p90_days": 497.0961574074074
+  },
+  {
+    "period": "2024",
+    "subset": "exclude_charters_and_questions",
+    "n": 111,
+    "mean_days": 227.97045097180515,
+    "median_days": 125.89791666666666,
+    "p90_days": 497.0961574074074
+  },
+  {
+    "period": "2024",
+    "subset": "substantive_resolution_labels_only",
+    "n": 82,
+    "mean_days": 177.19800008468835,
+    "median_days": 104.37467592592593,
+    "p90_days": 444.0241250000001
+  },
+  {
+    "period": "2025",
+    "subset": "all_issues",
+    "n": 150,
+    "mean_days": 190.76839081790123,
+    "median_days": 79.23342592592593,
+    "p90_days": 518.8590081018517
+  },
+  {
+    "period": "2025",
+    "subset": "exclude_charters_and_questions",
+    "n": 133,
+    "mean_days": 210.95298593706488,
+    "median_days": 88.66863425925926,
+    "p90_days": 563.2218055555554
+  },
+  {
+    "period": "2025",
+    "subset": "substantive_resolution_labels_only",
+    "n": 104,
+    "mean_days": 152.338468883547,
+    "median_days": 77.08890046296295,
+    "p90_days": 420.5578495370374
+  },
+  {
+    "period": "2026 YTD",
+    "subset": "all_issues",
+    "n": 86,
+    "mean_days": 159.07109617248062,
+    "median_days": 62.25013310185186,
+    "p90_days": 403.89211805555556
+  },
+  {
+    "period": "2026 YTD",
+    "subset": "exclude_charters_and_questions",
+    "n": 58,
+    "mean_days": 213.78207495210728,
+    "median_days": 88.77287037037037,
+    "p90_days": 480.6798206018519
+  },
+  {
+    "period": "2026 YTD",
+    "subset": "substantive_resolution_labels_only",
+    "n": 53,
+    "mean_days": 110.04554572851153,
+    "median_days": 66.22515046296296,
+    "p90_days": 262.4348125000001
+  }
+]
+
+FILTERED FILING COHORTS
+[
+  {
+    "period": "2024",
+    "plot_year": 2024,
+    "filed_n": 94,
+    "still_open_n": 0,
+    "n": 94,
+    "mean_days": 136.36233870173365,
+    "median_days": 91.33913773148149,
+    "p90_days": 345.9745995370371,
+    "km_median_days": 90.07951388888888
+  },
+  {
+    "period": "2025",
+    "plot_year": 2025,
+    "filed_n": 117,
+    "still_open_n": 7,
+    "n": 110,
+    "mean_days": 105.57383964646465,
+    "median_days": 70.54849537037038,
+    "p90_days": 244.00057291666667,
+    "km_median_days": 76.19194444444445
+  },
+  {
+    "period": "2026 YTD",
+    "plot_year": 2026,
+    "filed_n": 66,
+    "still_open_n": 35,
+    "n": 31,
+    "mean_days": 53.591619250298685,
+    "median_days": 42.5240625,
+    "p90_days": 108.38575231481481,
+    "km_median_days": 111.59599537037037
+  }
+]

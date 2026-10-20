@@ -1,0 +1,116 @@
+{
+  "repository": "w3ctag/design-reviews",
+  "as_of": "2026-10-19T22:13:04Z",
+  "bot_commit": "003aff0719a7e383f0425f9baac1f56770768059",
+  "issues_n": 1197,
+  "pull_requests_excluded_n": 43,
+  "closed": {
+    "n": 1149,
+    "mean_days": 210.7779765013055,
+    "median_days": 117.41630787037037,
+    "p90_days": 511.1881875
+  },
+  "excluding_charters_and_questions": {
+    "n": 1104,
+    "mean_days": 217.7034688254831,
+    "median_days": 126.77557291666668,
+    "p90_days": 514.7457743055558
+  },
+  "open_age": {
+    "n": 48,
+    "mean_days": 162.99345944251544,
+    "median_days": 133.49009837962961,
+    "p90_days": 318.7158229166668
+  },
+  "closed_within_days_pct": {
+    "30": 17.232375979112273,
+    "90": 41.34029590948651,
+    "180": 61.70583115752829,
+    "365": 82.33246301131419,
+    "730": 96.17058311575283
+  },
+  "open_over_180_days_n": 19,
+  "open_over_365_days_n": 3,
+  "longest_closed": [
+    {
+      "number": 76,
+      "title": "\"With Credentials\" flag possibly inconsistent with web architecture",
+      "created_at": "2015-09-15T15:14:25Z",
+      "closed_at": "2024-10-30T22:28:41Z",
+      "observed_days": 3333.301574074074,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/76"
+    },
+    {
+      "number": 334,
+      "title": "HTML Modules",
+      "created_at": "2019-01-16T23:15:03Z",
+      "closed_at": "2025-02-25T23:32:18Z",
+      "observed_days": 2232.0119791666666,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/334"
+    },
+    {
+      "number": 523,
+      "title": "MiniApp Lifecycle",
+      "created_at": "2020-06-10T06:29:03Z",
+      "closed_at": "2026-02-12T03:44:10Z",
+      "observed_days": 2072.8854976851853,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/523"
+    },
+    {
+      "number": 468,
+      "title": "Review the HTML spec's treatment of focus",
+      "created_at": "2020-01-27T23:49:30Z",
+      "closed_at": "2025-06-04T18:01:25Z",
+      "observed_days": 1954.758275462963,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/468"
+    },
+    {
+      "number": 342,
+      "title": "Related Website Sets (formerly First-Party Sets)",
+      "created_at": "2019-02-08T12:20:34Z",
+      "closed_at": "2024-02-27T20:59:50Z",
+      "observed_days": 1845.360601851852,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/342"
+    },
+    {
+      "number": 240,
+      "title": "The web platform needs a service discovery mechanism",
+      "created_at": "2018-04-07T04:09:27Z",
+      "closed_at": "2023-04-18T08:09:38Z",
+      "observed_days": 1837.1667939814815,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/240"
+    },
+    {
+      "number": 72,
+      "title": "Task Scheduling",
+      "created_at": "2015-09-14T16:11:01Z",
+      "closed_at": "2020-09-22T23:16:06Z",
+      "observed_days": 1835.2951967592592,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/72"
+    },
+    {
+      "number": 513,
+      "title": "CSS advanced attr() function",
+      "created_at": "2020-05-13T23:40:59Z",
+      "closed_at": "2025-01-07T23:56:23Z",
+      "observed_days": 1700.0106944444444,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/513"
+    },
+    {
+      "number": 416,
+      "title": "EditContext API",
+      "created_at": "2019-09-04T00:15:21Z",
+      "closed_at": "2023-10-19T07:06:17Z",
+      "observed_days": 1506.2853703703704,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/416"
+    },
+    {
+      "number": 62,
+      "title": "Clear Site Data",
+      "created_at": "2015-07-17T13:22:16Z",
+      "closed_at": "2019-05-22T13:01:41Z",
+      "observed_days": 1404.9857060185186,
+      "html_url": "https://github.com/w3ctag/design-reviews/issues/62"
+    }
+  ]
+}
