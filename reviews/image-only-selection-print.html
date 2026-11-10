@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Image-only iframe selection: printing repro</title>
+<style>
+  body {
+    max-width: 860px;
+    margin: 32px auto;
+    padding: 0 20px;
+    font: 16px/1.5 system-ui, sans-serif;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 4px solid #19733b;
+  }
+  output {
+    display: block;
+    margin: 12px 0;
+    padding: 12px;
+    background: #eee;
+    white-space: pre-wrap;
+    font-family: monospace;
+  }
+  .marker {
+    padding: 16px;
+    border: 3px dashed #b42318;
+    color: #b42318;
+    font-weight: bold;
+  }
+</style>
+<h1>Image-only iframe selection</h1>
+<p class="marker">OUTER PAGE: this heading and the instructions should not
+  appear when printing the selected iframe.</p>
+<ol>
+  <li>Click the green image inside the frame below.</li>
+  <li>Press <strong>Ctrl+A</strong> (macOS: <strong>Cmd+A</strong>).
+    Keep focus inside the frame.</li>
+  <li>Check the status below: the iframe should be focused, with a noncollapsed
+    selection containing its image.</li>
+  <li>Without clicking elsewhere, press <strong>Ctrl+P</strong>
+    (macOS: <strong>Cmd+P</strong>).</li>
+</ol>
+<p>Baseline expectation: print preview targets the selected iframe, containing
+  only the green image. Suspected regression with CL 8777690: preview targets
+  the outer page, including its red heading and these instructions.
+  If preview offers "Selection only", also check whether it remains available.</p>
+<iframe id="image-frame" title="Image-only selection target"></iframe>
+<output id="status" aria-live="polite">Loading iframe...</output>
+<p>The iframe contains one image, no text nodes, and no alt text. All lettering
+  inside the image is part of an SVG image, not selectable document text.
+  The status reports DOM selection, not the browser process's cached
+  <code>HasSelection()</code> value, so it cannot by itself prove the regression.</p>
+<script>
+  const frame = document.getElementById("image-frame");
+  const status = document.getElementById("status");
+  const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="760" height="260">'
+    + '<rect width="760" height="260" rx="12" fill="#19733b"/>'
+    + '<text x="380" y="110" text-anchor="middle" fill="white" '
+    + 'font-family="sans-serif" font-size="32">IFRAME IMAGE ONLY</text>'
+    + '<text x="380" y="160" text-anchor="middle" fill="white" '
+    + 'font-family="sans-serif" font-size="20">'
+    + 'Click here, then Ctrl+A, then Ctrl+P</text></svg>';
+
+  function updateStatus() {
+    const doc = frame.contentDocument;
+    const selection = frame.contentWindow.getSelection();
+    const image = doc.querySelector("img");
+    const containsImage = image && selection.rangeCount > 0
+      && !selection.isCollapsed
+      && selection.getRangeAt(0).intersectsNode(image);
+    status.textContent =
+      "Iframe focused: " + (document.activeElement === frame)
+      + "\nNoncollapsed DOM selection: " + !selection.isCollapsed
+      + "\nSelection intersects image: " + Boolean(containsImage)
+      + "\nDOM selection text: " + JSON.stringify(selection.toString())
+      + "\n(The image can be selected even when its DOM text is empty.)";
+  }
+
+  frame.addEventListener("load", () => {
+    frame.contentDocument.addEventListener("selectionchange", updateStatus);
+    frame.contentWindow.addEventListener("focus", updateStatus);
+    frame.contentWindow.addEventListener("blur", updateStatus);
+    frame.contentDocument.addEventListener("mouseup", updateStatus);
+    updateStatus();
+  });
+  frame.srcdoc = '<!doctype html><html><head><meta charset="utf-8">'
+    + '<style>html,body{margin:0}img{display:block;max-width:100%;height:auto}'
+    + '</style></head><body><img draggable="false" width="760" height="260" src="'
+    + "data:image/svg+xml," + encodeURIComponent(svg)
+    + '"></body></html>';
+</script>
+</html>
